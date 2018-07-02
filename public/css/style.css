@@ -1,0 +1,54 @@
+body {
+    margin: 0px;
+    background: #F3EEE2;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    font-family: 'Raleway';font-size: 14px;
+    color: #000000;
+}
+
+header {
+    background:#43C0F6;
+    width: 100vw;
+    height: 15vh;
+    float: left;
+    top:0;
+}
+
+#wrapper {
+    min-height: 100%;
+    min-width: 100%;
+    background: black;
+}
+
+.menuButton {
+    background-color: #F5CE28;
+    border: none;
+    color: black;
+    padding: 1vh 3vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#article {
+    height: 20vh;
+}
+
+input[type=hidden]{
+    width: 4vw;
+    height: 1vh;
+}
+
+/*footer {*/
+    /*background: #F81B84;*/
+    /*position:absolute;*/
+    /*bottom:0;*/
+    /*width: 100vw;*/
+    /*height: 20vh;*/
+/*}*/
