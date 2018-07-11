@@ -11,6 +11,7 @@
     <meta name="author" content="Nigel Fijnheer" />
 
     <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
@@ -20,15 +21,23 @@
 
 
 
-<header>
-    <a class="menuButton" href="index.php?page=home">Home</a>
-    <a class="menuButton" href="index.php?page=news">News</a>
-    <a class="menuButton" href="index.php?page=contact">Contact</a>
+    <header>
+        <div id="logo">
+        </div>
 
-    <form method="get" action="index.php">
-        <input type="hidden" name="page" value="news">
-        <input name="searchterm">
-        <input class="search" type="submit" name="submit" value="Search">
-    </form>
-</header>
+        <div id="searchfield">
+            <form method="get" action="index.php">
+                <input type="hidden" name="page" value="news">
+                <input name="searchterm">
+                <input class="search" type="submit" name="submit" value="Search">
+            </form>
+        </div>
 
+        <div id="buttonnav">
+        <a class="menuButton" href="index.php?page=about">About</a>
+        <a class="menuButton" href="index.php?page=contact">Contact</a>
+        <a class="menuButton" href="index.php?page=news">News</a>
+        <a class="menuButton" href="index.php?page=home">Home</a>
+        </div>
+
+    </header>

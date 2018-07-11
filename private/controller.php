@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * @throws Exception
+ * @throws SmartyException
+ */
 function homepage_action() {
     // MODEL
     global $smarty;
@@ -27,6 +31,7 @@ function contact_action() {
 }
 
 function news_action() {
+
     global $smarty;
     global $pageno;
     global $searchterm;
@@ -53,11 +58,58 @@ function login_action() {
     check_login();
 }
 
+function logout_action() {
+    check_logout();
+}
+
+function cookie_action() {
+    check_cookie();
+}
+
 function cms_action() {
     global $smarty;
+    $articles = get_all_articles();
+    $smarty->assign('articles',$articles);
     $smarty->display('header.tpl');
     $smarty->display('cms.tpl');
     $smarty->display('footer.tpl');
 }
 
+function delete_action() {
+    delete_article();
+}
+
+function edit_action() {
+    $article_id = $_GET['article_id'];
+    $articles = get_edit_info($article_id);
+    global $smarty;
+    $smarty->assign('articles',$articles);
+    $smarty->assign('article_id',$article_id);
+    $smarty->display('header.tpl');
+    $smarty->display('edit.tpl');
+    $smarty->display('footer.tpl');
+}
+
+function submit_edit_action() {
+    process_edit();
+}
+
+function addarticle_action() {
+    add_article();
+}
+
+
+function add_action() {
+    global $smarty;
+    $smarty->display('header.tpl');
+    $smarty->display('add.tpl');
+    $smarty->display('footer.tpl');
+}
+
+function about_action() {
+    global $smarty;
+    $smarty->display('header.tpl');
+    $smarty->display('about.tpl');
+    $smarty->display('footer.tpl');
+}
 
