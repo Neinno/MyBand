@@ -1,54 +1,318 @@
+@font-face {
+    font-family: Ailerons;
+    src: url(Ailerons-Typeface.otf);
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 body {
     margin: 0px;
-    background: #F3EEE2;
+    background-color: #dfdce3;
+    opacity:;
     height: 100%;
+    min-height: 100%;
     width: 100%;
     padding: 0;
     text-align: center;
-    font-family: 'Raleway';font-size: 14px;
-    color: #000000;
+    font-family: 'Raleway';font-size: .9em;
+    color: black;
 }
 
 header {
-    background:#43C0F6;
     width: 100vw;
-    height: 15vh;
+    height: 3em;
     float: left;
     top:0;
+    position: absolute;
+    margin-bottom: 10vh;
+    background-color: #9B410E;
 }
 
-#wrapper {
-    min-height: 100%;
-    min-width: 100%;
-    background: black;
+input[name=searchterm]{
+    float: left;
+    width: 175px;
+    height: 15px;
+    margin-top: 1.5vh;
+    margin-right:10px;
 }
+
+input[name=submit_login] {
+    color: white;
+    padding: .6em 1.2em;
+    background-color: #f7b733;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[name=submit_login]:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.nextbutton {
+    color: white;
+    padding: .6em 1.2em;
+    background-color: #f7b733;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.nextbutton:hover {
+    background-color: #555555;
+    color: white;
+}
+
+#searchfield {
+    float: right;
+    width: 20vw;
+    height: 5vh;
+    margin-right: 1em;
+}
+
+.search {
+    margin-top: .4em;
+    color: white;
+    padding: .6em 1.2em;
+    background-color: #f7b733;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -2.9em;
+}
+
+.search:hover {
+    background-color: #555555;
+    color: white;
+}
+
+#logo {
+    background-image: url("../images/logo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+    position: absolute;
+    width: 5em;
+    height: 3em;
+}
+
+#login {
+    margin-top: 20vh;
+}
+
+#title {
+    width: 100vw;
+    top:0;
+    margin-top: 5vh;
+    position: absolute;
+    text-align: center;
+}
+
 
 .menuButton {
-    background-color: #F5CE28;
+    float: right;
     border: none;
-    color: black;
-    padding: 1vh 3vw;
+    color: white;
+    background-color: #f7b733;
+    padding: 1vh 2vw;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 17px;
-    margin: 4px 2px;
+    margin: 4px 5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
     cursor: pointer;
 }
 
+.menuButton:hover {
+    background-color: #555555;
+    color: white;
+}
+
+input[name=emailsubmit] {
+    margin-top: .4em;
+    color: white;
+    padding: .6em 1.2em;
+    background-color: #f7b733;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: absolute;
+    margin-left: -2.9em;
+}
+
+input[name=emailsubmit]:hover {
+    background-color: #555555;
+    color: white;
+}
+
+#buttonnav {
+    margin-right: 20em;
+}
+
 #article {
+    height: 17em;
+    margin-bottom: 2vh;
+}
+
+#articletitle {
+    height: 2em;
+    text-align: center;
+}
+
+#articlecontent {
+    text-align: left;
+    margin-left: 15vw;
+
+}
+
+#articleimage {
+    width: 20vw;
     height: 20vh;
+    float: left;
+    margin-top: -25vh;
+    margin-left: -15vw;
+    position: absolute;
 }
 
-input[type=hidden]{
-    width: 4vw;
-    height: 1vh;
+.imagenews {
+    max-width: 14em;
+    max-height: 18em;
+    position: absolute;
 }
 
-/*footer {*/
-    /*background: #F81B84;*/
-    /*position:absolute;*/
-    /*bottom:0;*/
-    /*width: 100vw;*/
-    /*height: 20vh;*/
-/*}*/
+#contentarticle {
+    height: 5vh;
+    width: 50vw;
+    text-align: center;
+    margin-left: 25vw;
+    position: absolute;
+    margin-top: 15vh;
+}
+
+#homewallp {
+    width: 100%;
+    height: 100%;
+    color: black;
+    font-size: 10em;
+    font-family: Ailerons;
+}
+
+#cms {
+    color: white;
+    font-size: 2em;
+}
+
+#cmscontent {
+    margin-top: 15vh;
+}
+
+table, th, td {
+    font-size: 0.8em;
+    width: 100vw;
+    color: black;
+    text-align: center;
+}
+
+#addcontent {
+    margin-top: 15vh;
+}
+
+#contactform {
+    margin-top: 10em;
+    margin-bottom: 50vh;
+}
+
+#subject {
+    height:15em;
+    width:50em;
+}
+
+.editButton {
+    color: white;
+    font-size: .8em;
+    padding: .3em 1.2em;
+    background-color: #f7b733;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+}
+
+.editButton:hover {
+    background-color: #555555;
+    color: white;
+}
+
+
+input[name=delete_submit] {
+     color: white;
+     padding: .6em 1.2em;
+     background-color: #f7b733;
+     -webkit-transition-duration: 0.4s;
+     transition-duration: 0.4s;
+     cursor: pointer;
+ }
+
+input[name=delete_submit]:hover {
+    background-color: #555555;
+    color: white;
+}
+
+input[name=logoutButton] {
+    color: white;
+    padding: .6em 1.2em;
+    background-color: #f7b733;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+input[name=logoutButton]:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.addButton {
+    color: white;
+    padding: .6em 1.2em;
+    background-color: #f7b733;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    float: right;
+    margin-right: 2em;
+    margin-top: -3.5em;
+}
+
+.addButton:hover {
+    background-color: #555555;
+    color: white;
+}
+
+textarea[name=content] {
+    height: 20em;
+    width:50em;
+}
+
+#editdiv {
+    margin-top: 10em;
+}
+
+#about {
+    text-align: center;
+    margin-left:15em;
+    margin-right:15em;
+    margin-bottom: 50vh;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+}
